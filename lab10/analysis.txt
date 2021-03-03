@@ -1,0 +1,50 @@
+O0 Optimization Level
+Timer = 0.33
+Timer divided by R = 6.6e-07
+Timer = 0.35
+Timer divided by R = 7e-07
+*************************************
+O1 Optimization Level
+Timer = 0.15
+Timer divided by R = 3e-07
+Timer = 0.16
+Timer divided by R = 3.2e-07
+*************************************
+O2 Optimization Level
+Timer = 0.14
+Timer divided by R = 2.8e-07
+Timer = 0.17
+Timer divided by R = 3.4e-07
+*************************************
+O3 Optimization Level
+Timer = 0.13
+Timer divided by R = 2.6e-07
+Timer = 0.08
+Timer divided by R = 1.6e-07
+
+I arrived on the Qn value of 24 because the iterations for the float 
+bisection. Changing the Qn value changes the error because Qn represents
+the fraction number of bits in the Qn format. If I try a value of 32 for
+Qn I get a warning because the left shift count is larger than the width
+of the type. This happens because you are trying to shift farther than
+you should which would "break" the number.
+
+The best optimization is the O3 optimization level as shown above.
+The Qn gets 100%+ faster when going from level 0 to 1 but then 
+only gets slightly faster from 1 to 2 and 2 to 3. Float bisection
+gets 100%+ faster from level 0 to 1 and actually gets slightly 
+slower from 1 to 2 and then again gets 100%+ faster when going from 
+2 to 3. 
+
+The prelab had us look into the limitations of traditional floating
+point calculations and how we can lose precision. And how we can lose
+some precision when converting to and from fixed and float numbers.
+
+The in-lab had us work with Qn division, multiplication, complex 
+equations and look at the performance of Qn vs float. All of this was
+pretty easy and straight forward. 
+
+The assignment was not too difficult, it was a bit unclear on when to
+change numbers from float to fix and vice versa. The TAs had to step
+me through when to use the functions and what types are being printed.
+

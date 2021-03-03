@@ -1,0 +1,26 @@
+*********************************
+Syntax Error
+Please select a non-zero value for A
+*********************************
+The roots of:0.000000x**2 + 0.000000x + 1.000000
+  Root0: -nan + -nani
+  Root1: -nan + nani
+Timer = 0
+Timer divided by R = 0
+
+*********************************
+Syntax Error
+Please select a value for C
+*********************************
+The roots of:1.000000x**2 + 0.000000x + nan
+  Root0: nan + nani
+  Root1: nan + -nani
+Timer = 0
+Timer divided by R = 0
+
+The roots of:1.000000x**2 + 0.000000x + 1.000000
+  Root0: 0.000000 + 1.000000i
+  Root1: -0.000000 + -1.000000i
+Timer = 0
+Timer divided by R = 0
+

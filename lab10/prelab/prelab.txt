@@ -1,0 +1,24 @@
+The addition didn't work properly because DBL_EPILSON represents the
+upper bound on the relative error due to rounding in floating point
+arithmetic, aka the tolerance between two floats that can be had before
+they are not equal. I just compared d to d+DBL_EPILSON to see if they
+were still the same and if they were not I printed FAILED.
+
+Another name for a Qn0 is integer.
+No there was no data loss.
+Yes there was data loss.
+No there was no data loss.
+
+Integers are 32 bits long
+Adding epilson: 10.000000 + 0.000000 = 10.000000
+Addition has failed 10.000000 = 10.000000
+
+Conversion test
+Started with 1.000000 converted to qn0 = 1 decimal then back to 1.000000
+	[0000000000000001]
+ Start with 12.250000 converted to qn3 = 98 decimal then back to 12.250000
+	[0000000001100010]
+ Start with 12.062500 converted to qn3 = 96 decimal then back to 12.000000
+	[0000000001100000]
+ Start with 12.062500 converted to qn4 = 193 decimal then back to 12.062500
+	[0000000011000001]

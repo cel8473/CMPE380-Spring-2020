@@ -1,0 +1,20 @@
+The prelab for this assignment was a review of least square data
+fitting and GSL implementation. Lab_a.c had us use the gsl functions
+to create matrixes and vectors and to decomp and solve for a solution.
+
+The in-lab portion of the lab had us use the dynamic array files from
+lab3 to be used for the lab_b.c file. We had to update 3 lines of code
+with proper parameters and change one part of the main function.
+
+The assignment was create a program that produces more accurate results
+from this real device's ouput. This was done by using the least squares 
+solution framework using QR factorizations and GSL. We had to code in
+get_opt_long code and properly create the matrixes and vectors to house
+the data. The device had an initiatial error with max, min, average, and
+medians and we needed to make a correction polynomial that minimized the
+error levels. All three lines: ideal, corrected and original 
+were plotted using a plot program and a png was created to show how much
+better the corrected is than the original. I found that the 3rd order
+polynomial did the best job at correcting the data, after trying 2nd-5th
+order polynomials.
+

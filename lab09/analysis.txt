@@ -1,0 +1,56 @@
+O0
+Timer = 0.13
+Timer divided by R = 1.3e-06
+
+Timer = 0.11
+Timer divided by R = 1.1e-06
+
+Timer = 0.17
+Timer divided by R = 1.7e-06
+
+O1
+Timer = 0.13
+Timer divided by R = 1.3e-06
+
+Timer = 0.11
+Timer divided by R = 1.1e-06
+
+Timer = 0.16
+Timer divided by R = 1.6e-06
+
+O2
+Timer = 0.12
+Timer divided by R = 1.3e-06
+
+Timer = 0.09
+Timer divided by R = 0.9e-06
+
+Timer = 0.15
+Timer divided by R = 1.5e-06
+
+O3
+Timer = 0.12
+Timer divided by R = 1.2e-06
+
+Timer = 0.10
+Timer divided by R = 1e-06
+
+Timer = 0.16
+Timer divided by R = 1.6e-06
+
+The short comings in the C99 implementation of complex numbers
+is that the complex functions must return more than a single
+value, and a few of the functions for complex arithmetic numbers
+do not provide correct answers under all conditions. The optimization
+worked as expected but none of the levels dramatically changed the times
+
+The prelab was making masks and shifts for ieee single precision format
+to be used in the in-lab assignment. The in-lab then took those masks
+and shifts and implemented them to be run multiple times on various
+numbers. The second part of the in-lab was messing with epilsons 
+to see how to close we could get to the given one. The third part of
+the in-lab was implementing the 4 complex add functions to see which
+worked all the time and which did not because of the temp stack.
+The assignment had us create a quadratic solver for complex numbers
+that use getopt_long to have the user enter values to be returned the
+two roots.
