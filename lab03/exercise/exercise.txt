@@ -1,0 +1,10 @@
+./lab_b- No there was no issues.
+Valgrind- Yes there are issues identified now.
+47 bytes and 3 blocks were allocated. 35 bytes and 2 blocks were lost.
+7 bytes and 1 block was allocated. 0 bytes and 0 blocks were lost.
+
+./lab_c- No there was no issues.
+Valgrind- Yes there were two issues identified
+400 bytes and 1 block was allocated. 400 bytes and 1 block was lost.
+400 bytes and 1 block was allocated. 0 bytes and 0 blocks were lost.
+

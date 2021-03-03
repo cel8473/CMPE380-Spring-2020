@@ -1,0 +1,36 @@
+For the lab I created a union and structure of a float
+and integer, and assigned the value of 5 to the integer
+and 6.0 to the float, then printed out the values.
+I also printed out the siez of the union and structure.
+I created a data structure of an int_16 and a char buffer 
+of 3 bytes and displayed the number of bytes in the struct
+I printed out a list of Beatle band members and birth years
+and the index in the array. I printed out a concatenated 
+string of all their first names.
+
+In lab_c.c, I malloced 12 bytes for text_p and safe copied 
+a string and printed out a string, realloced 20 bytes for
+text_p and safe concatenated another string onto the end of
+the first and freed the memory.
+
+In lab_d.c, I copied lab_c.c into the file and changed all 
+of the safe functions to the non-safe version. I debugged
+the code and found where the segmentation error was happening.
+
+For the assignment, I implemented a data driven dynamic array
+as a C module and got familiar with the use of mem allocation
+and deallocation function in the standard library.I wrote
+the implementation of my dynamic array module using the 
+interface specifications in the file header, and used the 
+pseudo code to assist in the creation of the array.
+
+I had some trouble with gdb.log file, I accidentally overwrote
+my lab_d.c file and it took a while before I actually was able
+to get the breakkpoints in the correct spot and get it to continue
+where I wanted it to. The rest of the lab went pretty well but I 
+was unable to complete the in-lab assignment before the time 
+ran out in lab but it seemed that no one really was able to.
+
+Conclusion, not being able to see the line like in java or other
+high level languages makes debugging a bit harder but I attribute
+it to more of a learning curve than anything.

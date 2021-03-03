@@ -1,0 +1,45 @@
+Breakpoint 1 at 0x40060d: file lab_d.c, line 25.
+No symbol "text_p" in current context.
+Starting program: /home/cel8473/lab02/exercise/lab_d 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffd798) at lab_d.c:25
+25		text_p = malloc(12);
+Missing separate debuginfos, use: debuginfo-install glibc-2.17-260.el7_6.5.x86_64
+$1 = 49 '1'
+Note: breakpoint 1 also set at pc 0x40060d.
+Breakpoint 2 at 0x40060d: file lab_d.c, line 25.
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Program not restarted.
+26		if(text_p == NULL){
+$2 = 0x602010 ""
+$3 = 0 '\000'
+Not stopped at any breakpoint; argument ignored.
+Continuing.
+
+Program received signal SIGABRT, Aborted.
+0x00007ffff7a44207 in raise () from /lib64/libc.so.6
+Missing separate debuginfos, use: debuginfo-install libgcc-4.8.5-36.el7_6.2.x86_64
+#0  0x00007ffff7a44207 in raise () from /lib64/libc.so.6
+#1  0x00007ffff7a458f8 in abort () from /lib64/libc.so.6
+#2  0x00007ffff7a86d27 in __libc_message () from /lib64/libc.so.6
+#3  0x00007ffff7a8f489 in _int_free () from /lib64/libc.so.6
+#4  0x0000000000400716 in main (argc=1, argv=0x7fffffffd798) at lab_d.c:39
+Breakpoint 3 at 0x40070a: file lab_d.c, line 39.
+The program being debugged has been started already.
+Start it from the beginning? (y or n) 
+Starting program: /home/cel8473/lab02/exercise/lab_d 
+
+Breakpoint 1, main (argc=1, argv=0x7fffffffd798) at lab_d.c:25
+25		text_p = malloc(12);
+Continuing.
+
+Breakpoint 3, main (argc=1, argv=0x7fffffffd798) at lab_d.c:39
+39		free(text_p);
+
+Program received signal SIGABRT, Aborted.
+0x00007ffff7a44207 in raise () from /lib64/libc.so.6
+A debugging session is active.
+
+	Inferior 1 [process 5981] will be killed.
+
+Quit anyway? (y or n) 

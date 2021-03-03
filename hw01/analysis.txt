@@ -1,0 +1,37 @@
+commit 8d320048e0006a32ebec860924a88f34df3df8cd
+Author: cel8473 <cel8473@g.rit.edu>
+Date:   Tue Jan 21 21:08:44 2020 -0500
+
+    Added my major
+
+commit a37ef0d6be307c747e41b19d8eea19ff84312735
+Author: cel8473 <cel8473@g.rit.edu>
+Date:   Tue Jan 21 21:08:01 2020 -0500
+
+    Added my name to the file
+
+commit deecd9925e60be93ef45fe884e9bc6f18db6b9db
+Author: cel8473 <cel8473@g.rit.edu>
+Date:   Tue Jan 21 21:06:56 2020 -0500
+
+    I created test.c
+
+I created a file called Larson_myinfo.txt and put
+my name, major, anticipated grad date, and each of
+the programming languages I know and how well I 
+know them. I ran MatLab on the Linux machine, and
+screenshotted the screen. I listed all the hidden 
+files in my root directory and redirected the 
+output using UNIX redirection to a file called 
+hidden.txt and added stuff to .bashrc then copied
+it into my hw01 directory and called it bashrc.txt
+Tested git by creating and adding a file to a git
+repository, then added my name, and major to the 
+file with separate committs for each, deleted the
+file and recovered it from git, using git checkout.
+And listed the change log above. It took a bit of
+time to do the git part of the lab since I was having
+difficulty commiting and commenting so it took way too long.
+Other than that everything went smoothly. Now I am 
+going to put everything into a tarball.
+Conclusion, read the comment step on the git example.

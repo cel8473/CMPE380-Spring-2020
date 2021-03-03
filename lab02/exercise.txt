@@ -1,0 +1,29 @@
+short int              value: 1,  Size: 2 bytes
+unsigned short int     value: 2,  Size: 2 bytes
+unsigned int           value: 3,  Size: 4 bytes
+int                    value: 4,  Size: 4 bytes
+long int               value: 5,  Size: 8 bytes
+unsigned long int      value: 6,  Size: 8 bytes
+long long int          value: 7,  Size: 8 bytes
+unsigned long long int value: 8,  Size: 8 bytes
+signed char            value: 8,  Size: 1 bytes
+unsigned char          value: 9,  Size: 1 bytes
+float                  value: 11.000000,  Size: 4 bytes
+double                 value: 12.000000,  Size: 8 bytes
+long double            value: 13.000000,  Size: 16 bytes
+Different data '123.456789'  '123.457'  ' 123.4568'
+
+Unsigned long int and long int are the incorrect data size.
+The value for the aNumber1 integer is not what I expected
+Yes, the values in aNumber2 is what I expected
+The struct is larger because you are storing both values in the struct
+in two different memory locations which means it needs 4 bytes for 
+the float and 4 bytes for the integer.
+
+Yes the string printed properly because I only gave it 12 bytes to work
+with the first time so only the first 11 char are printed, when 
+concatenated the string only added 8 chars from the 2nd string because
+we allocated 8 more bytes. 
+
+Both the strings printed as I expected but there was a segmentation 
+error. The offending function is the free function.

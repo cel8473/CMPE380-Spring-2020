@@ -1,0 +1,10 @@
+Christopher Larson
+Computer Engineering 2022
+Python 4/10
+Java 6/10
+VHDL 5/10
+C 2/10
+C++ 3/10
+C# 7/10
+SQL 7/10
+

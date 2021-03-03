@@ -1,0 +1,49 @@
+In lab_a.c for the prelab we learned what happens when we
+have an uninitialized value of size and how to use valgrind.
+And also got familiar with the getopt and getopt_long 
+functions to use in the in-lab exercise.
+
+For lab_b.c we used valgrind to see how many bytes and
+blocks we used during the program and how much is lost
+because we malloced more memory than was necessary and
+freed before the last malloc instead of after. Key point
+is to malloc only what we need and not an arbitrary amount
+of memory. We piped the printed statement from valgrind
+into a txt file.
+
+For lab_c.c we similarly used valgrind to check memory 
+usage. In this program, the problem was that the for 
+loop we used to iterate over numbers used to high of
+numbers so the "i <= 100" changed to "i < 100" and
+we forgot to free the malloced memory before returning.
+We piped the printed statement from valgrind into a txt
+file.
+
+For lab_d.c we used a get_opt parser to print out the raw
+arguments provided by the operating systems and then parses
+the arguments. -a and -b triggered a flag corresponding to 
+the letter ex. a => aflag. -c and -d required a parameter
+and set a string equal to that value and printed it out.
+We piped 5 arguments into a txt file to show that all of 
+the argument types worked.
+
+For lab_e.c we used a get_opt_long parser similar to lab_d
+but instead of small arguments like -a, get_opt_long uses
+full sized words. The long options were as follows: verbose,
+verb, brief, add, append, del, delete, and file. Some of 
+the options required parameters and others did not.
+We piped 9 arguments into a txt file to show that all of
+the argument types worked.
+
+For the assignment, we used the DynamicArray that was created
+in lab2 and checked to see if there were any memory leaks for 
+part 1 using build1 and mem1. build1 builds the original 
+dynamic array code and mem1 runs valgrind on the original code.
+Then using TestDarray.c we added get_opt_long features to the 
+program to implement the following features:
+-i file or -in file or -input file (required, file to process)
+-w number or -word number (required, number of words to print)
+-h or -help (print user help and take no other action)
+Then used build2, test2 and mem2 to build and run the code 
+and check for memory leaks. The returned value of test2 is 
+piped into solutions.txt

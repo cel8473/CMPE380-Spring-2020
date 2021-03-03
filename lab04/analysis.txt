@@ -1,0 +1,38 @@
+There was no prelab for this assignment.
+
+The in-lab exercise was used to exercise pointer usage, data
+structure access and memory leak detection. For lab_a we
+printed out the memory addresses for the program, static,
+ram, heap and stack data. We created and called function
+pointers. We initialized the stack and heap data variables
+and used them to print out values, then freed the pointers.
+We saw that without setting the pointers to NULL, we got 
+memory leaks using valgrind. 
+
+For lab_b we created, used and destroyed pass by pointer
+and pass by value data structures. This was done by coding
+functions to create N digit polynomials and printing out
+the number by reference or value, as well as making sure
+that we cleaned the pointers properly, and checked
+for memory leaks.
+
+For lab_c we used wrapper objects and data structures to
+simulate a linked list. We coded a function to print the 
+linked list while walking each node. We made sure to 
+clean up all the memory used and checked for memory leaks.
+
+For the assignment, we were tasked with implementing a basic
+linked lits abstract data type as a C module. The module had
+a function to remove a node from the front, add a node to the 
+back, destroy the linked list and initializing the linked list.
+I had trouble with the destroying the linked list until I just
+decided to use the remove from front function iteratively until
+the list was empty. For a while I did not remember to free the 
+string that was being returned in the remove function. Other
+problems I ran into was just making sure that each of the 
+attributes in the nodes were properly set so that the linked 
+nodes knew about each other.
+
+Conclusion is to remember to free everything you malloc,
+even if it's a return for a function, whenever that
+function is used the pointer needs to be freed.
