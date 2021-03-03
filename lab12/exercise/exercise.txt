@@ -1,0 +1,70 @@
+LAB_D
+
+./lab_d
+Enter an argument
+
+./lab_d -1
+Enter a number larger than 1
+
+./lab_d 6
+     -49.9        2.1
+     -28.0      -12.0
+      22.9      -31.6
+      22.9       46.9
+      26.5       49.2
+      39.7       30.2
+
+./lab_d 1 2
+Only 1 number is allowed in the arguments
+****************************************************
+LAB_E
+String is malloced with MAX_STR+1 because the null terminator at the 
+end of a string counts as a character. 
+Original
+string "1234567" length = 7
+string "12345678" length = 8
+string "123456789" length = 9 but there are three errors that pop up
+an invalid write of size 1 and two invalid read of size 1s.
+Valgrind reports errors when the buffer overflows.
+
+Sprintf-MAX_STR=8
+string "1234567" length = 7
+string "12345678" length = 8
+string "12345678" length = 7 string "9" length = 1
+Valgrind reports no errors because the strings are now stored in a buffer
+to be used later. The output is "funny" because it cuts the string at the
+MAX_STR length and prints out the cutoff string next.
+
+Sprintf-MAX_STR=7
+string "1234567" length = 7
+string "1234567" length = 7 string "8" length = 1
+string "1234567" length = 7 string "89" length = 2
+Valgrind reports no errors because of the same reason as last time. The 
+output is different because it is cutoff at 7 instead of 8 characters.
+
+==10948== Memcheck, a memory error detector
+==10948== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==10948== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==10948== Command: ./lab_f
+==10948== 
+Read: '1 2 3'
+Read: '4    5 6    7     '
+Read: '8 9'
+Read: '
+'
+Read: '
+'
+Read: '
+'
+3 parameters 1 2 3
+3 parameters 4 5 6
+3 parameters 7 8 9
+==10948== 
+==10948== HEAP SUMMARY:
+==10948==     in use at exit: 0 bytes in 0 blocks
+==10948==   total heap usage: 2 allocs, 2 frees, 824 bytes allocated
+==10948== 
+==10948== All heap blocks were freed -- no leaks are possible
+==10948== 
+==10948== For counts of detected and suppressed errors, rerun with: -v
+==10948== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

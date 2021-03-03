@@ -1,0 +1,185 @@
+LAB_A
+The first two cases for lab_a worked fine but when I tried to test
+with my first name it got stuck in a loop and kept printing out
+the second case.
+
+After doing some error checking, when a string is entered the program
+prints out the following message "Error, nothing parsed".
+
+*************************************************************************************************
+LAB_B
+Argc = 3
+Argv[1] = hello
+Argv[2] = world
+Env[0] = GNUPLOT_DEFAULT_DDFONT=DejaVuSans.ttf
+Env[1] = SPACK_ROOT=/tools/spack
+Env[2] = HOSTNAME=eng-2500-21
+Env[3] = TERM=xterm
+Env[4] = SHELL=/bin/bash
+Env[5] = HISTSIZE=1000
+Env[6] = SSH_CLIENT=8.9.85.207 51462 22
+Env[7] = PM_NAME=yum
+Env[8] = OSSP=
+Env[9] = QTDIR=/usr/lib64/qt-3.3
+Env[10] = QTINC=/usr/lib64/qt-3.3/include
+Env[11] = OS=RHEL
+Env[12] = SSH_TTY=/dev/pts/1
+Env[13] = QT_GRAPHICSSYSTEM_CHECKED=1
+Env[14] = USER=cel8473
+Env[15] = OSVERSION=7
+Env[16] = LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+Env[17] = GDFONTPATH=/usr/share/fonts/dejavu
+Env[18] = SOURCED_RC_SH=true
+Env[19] = MAIL=/var/spool/mail/cel8473
+Env[20] = PATH=/tools/spack/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/tools/bin:/home/cel8473/bin
+Env[21] = PWD=/home/cel8473/lab12/prelab
+Env[22] = _LMFILES_=/etc/modulefiles/tools-dir:/tools/Modules/modulefiles.meta/module_default:/tools/Modules/modulefiles/system_defaults:/tools/Modules/modulefiles.meta/module_rhel7:/tools/Modules/modulefiles.meta/module_class
+Env[23] = LANG=en_US.UTF-8
+Env[24] = MODULEPATH=/tools/spack/share/spack/modules/linux-rhel7-x86_64:/usr/share/Modules/modulefiles:/etc/modulefiles:/tools/Modules/modulefiles.meta:/tools/Modules/modulefiles:/tools/Modules/modulefiles.rhel7:/tools/Modules/modulefiles.class
+Env[25] = LOADEDMODULES=tools-dir:module_default:system_defaults:module_rhel7:module_class
+Env[26] = HISTCONTROL=ignoredups
+Env[27] = KRB5CCNAME=FILE:/tmp/krb5cc_29915_rJ5Nue
+Env[28] = SHLVL=1
+Env[29] = HOME=/home/cel8473
+Env[30] = DIRNEWSDIR=/shared/rc/dirnews/
+Env[31] = LOGNAME=cel8473
+Env[32] = QTLIB=/usr/lib64/qt-3.3/lib
+Env[33] = XDG_DATA_DIRS=/home/cel8473/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+Env[34] = SSH_CONNECTION=8.9.85.207 51462 129.21.154.84 22
+Env[35] = MODULESHOME=/usr/share/Modules
+Env[36] = LESSOPEN=||/usr/bin/lesspipe.sh %s
+Env[37] = DISPLAY=localhost:10.0
+Env[38] = PM_COMMAND=yum install -y
+Env[39] = BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`
+}
+Env[40] = BASH_FUNC_spack()=() {  if [ -n "${ZSH_VERSION:-}" ]; then
+ emulate -L sh;
+ fi;
+ _sp_flags="";
+ while [ ! -z ${1+x} ] && [ "${1#-}" != "${1}" ]; do
+ _sp_flags="$_sp_flags $1";
+ shift;
+ done;
+ if [ -n "$_sp_flags" ] && [ "${_sp_flags#*h}" != "${_sp_flags}" ] || [ "${_sp_flags#*V}" != "${_sp_flags}" ]; then
+ command spack $_sp_flags "$@";
+ return;
+ fi;
+ _sp_subcommand="";
+ if [ ! -z ${1+x} ]; then
+ _sp_subcommand="$1";
+ shift;
+ fi;
+ case $_sp_subcommand in 
+ "cd")
+ _sp_arg="";
+ if [ -n "$1" ]; then
+ _sp_arg="$1";
+ shift;
+ fi;
+ if [ "$_sp_arg" = "-h" ] || [ "$_sp_arg" = "--help" ]; then
+ command spack cd -h;
+ else
+ LOC="$(spack location $_sp_arg "$@")";
+ if [ -d "$LOC" ]; then
+ cd "$LOC";
+ else
+ return 1;
+ fi;
+ fi;
+ return
+ ;;
+ "env")
+ _sp_arg="";
+ if [ -n "$1" ]; then
+ _sp_arg="$1";
+ shift;
+ fi;
+ if [ "$_sp_arg" = "-h" ] || [ "$_sp_arg" = "--help" ]; then
+ command spack env -h;
+ else
+ case $_sp_arg in 
+ activate)
+ _a="$@";
+ if [ -z ${1+x} ] || [ "${_a#*--sh}" != "$_a" ] || [ "${_a#*--csh}" != "$_a" ] || [ "${_a#*-h}" != "$_a" ]; then
+ command spack env activate "$@";
+ else
+ eval $(command spack $_sp_flags env activate --sh "$@");
+ fi
+ ;;
+ deactivate)
+ _a="$@";
+ if [ "${_a#*--sh}" != "$_a" ] || [ "${_a#*--csh}" != "$_a" ]; then
+ command spack env deactivate "$@";
+ else
+ if [ -n "$*" ]; then
+ command spack env deactivate -h;
+ else
+ eval $(command spack $_sp_flags env deactivate --sh);
+ fi;
+ fi
+ ;;
+ *)
+ command spack env $_sp_arg "$@"
+ ;;
+ esac;
+ fi;
+ return
+ ;;
+ "load" | "unload")
+ _sp_subcommand_args="";
+ _sp_module_args="";
+ while [ "${1#-}" != "${1}" ]; do
+ if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+ command spack $_sp_flags $_sp_subcommand $_sp_subcommand_args "$@";
+ return;
+ else
+ if [ "$1" = "-r" ] || [ "$1" = "--dependencies" ]; then
+ _sp_subcommand_args="$_sp_subcommand_args $1";
+ else
+ _sp_module_args="$_sp_module_args $1";
+ fi;
+ fi;
+ shift;
+ done;
+ case $_sp_subcommand in 
+ "load")
+ if _sp_full_spec=$(command spack $_sp_flags module tcl find $_sp_subcommand_args "$@"); then
+ module load $_sp_module_args $_sp_full_spec;
+ else
+ $(exit 1);
+ fi
+ ;;
+ "unload")
+ if _sp_full_spec=$(command spack $_sp_flags module tcl find $_sp_subcommand_args "$@"); then
+ module unload $_sp_module_args $_sp_full_spec;
+ else
+ $(exit 1);
+ fi
+ ;;
+ esac
+ ;;
+ *)
+ command spack $_sp_flags $_sp_subcommand "$@"
+ ;;
+ esac
+}
+Env[41] = OLDPWD=/home/cel8473
+Env[42] = _=./lab_b
+*************************************************************************************************
+LAB_C
+./lab_c
+Enter an argument
+
+./lab_c -1
+Enter a number larger than 1
+
+./lab_c 6
+     -49.9
+       2.1
+      26.5
+      30.2
+      39.7
+      49.2
+
+./lab_c 1 2
+Only 1 number is allowed in the arguments
