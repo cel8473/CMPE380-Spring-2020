@@ -1,0 +1,20 @@
+This is the C output
+move fopen to top disabled 
+Timer = 5.38
+Timer divided by R = 0.0179333
+Timer = 0.2
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+This is the CPP output
+Timer = 1.04
+Timer divided by R = 0.00346667
+Timer = 2
+Timer divided by R = 6.66667e-05
+1500300 data lines processed, the best least squares line is: Y = 1.26393 * X + 0.823035
+This is the C output
+move fopen to top enabled 
+Timer = 0.01
+Timer divided by R = 3.33333e-05
+Timer = 0
+Timer divided by R = 0
+5000 data lines processed, the least square line is : Y = -nan * X + -nan

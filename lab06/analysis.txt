@@ -1,0 +1,84 @@
+In the prelab we had an oral quiz about 2d arrays and
+how to make them properly as well as what macros were,
+how they are used, and how they are coded.
+
+The first part of the in-lab was learning how to use
+macros to only run parts of your code when certain
+compile parameters were defined. The macro expansion
+flags -E and -P were used to see the macros as they 
+are read by the compiler. This is helpful for debugging
+common syntax issues when using macros. We expanded the
+macros into the exercise.txt file which is where we 
+viewed and found the small problems with the macros.
+
+The second part of the lab was about a simple 2D dynamic
+macro array and how to use Valgrind to find hidden 
+issues. The way that the 2d array was written, you needed
+to iterate over ALL the rows that you malloced earlier in
+the program and not just free the first row that was
+being pointed at.
+
+The assignment objective was to develop a reusable module
+with timing macros for instrumentation of C programs.
+We implemented addition macros in Timers.h, such as
+print_rtimer(A,R) which printed the time it took for
+a program to run multiple times using print_timer 
+divided by R. Begin_repeat_timing, end_repeat_timing was
+designed to wrap the code being timed in a for-loop that
+executes R times. Then implementing these macros into
+the C and C++ code to measure and report execution time
+of data input and calculations with two different timers.
+
+We measured 6 cases and these were the average reported
+times with analysis questions.
+
+C Code w/ no move option-
+Data Reps = 300
+Calculation Reps = 30000
+	Data Total = 5.29s, D/R = 0.0176s
+	Calc Total = 0.21s, C/R = 7us (micro x10^-6)
+C Code w/ no move option-
+2x the reps
+	Data Total = 14.64s, D/R = 0.0244s
+	Calc Total = 0.41s, C/R = 7us
+C Code w/ move option
+Data Reps = 300
+Calc Reps = 10,000,000
+	Data Total = 0.02s, D/R = 67us
+	Calc Total = 0.06, C/R = 6ns
+C Code w/ move option
+2x the reps
+	Data Total = 0.02s, D/R = 33us
+	Calc Total = 0.13, C/R 6.5ns
+C++ Code
+Data Reps = 300
+Calculation Reps = 30000
+	Data Total = 1.37, D/R = 0.00457
+	Calc Total = 9.85, C/R = 330us
+
+C++ Code
+2x the reps
+	Data Total = 2.5, D/R 0.00415
+	Calc Total = 19.65, C/R = 327us
+
+Compare 1 and 2. Per loop the data performance gets
+worse and the calculation performance stays steady.
+The total time of the data more than doubles, while
+the calculations almost exactly double.
+
+Compare 3 and 4. Per loop the data performance gets
+to a certain time and never takes longer and the
+calculation performace slightly decreases. The total
+time for data stays the same, the total time for the
+calculations doubles.
+
+Compare 1 and 5. The C code is about 4x slower than the
+C++ code at I/O operations but 50x slower at the 
+calculations. 
+
+Compare 5 and 6. The data performance gets a little 
+better as the number of reps went up, the calculation
+performance stayed about the same. The second total time
+for the data was almost double the first time. The 
+second time for the calculations was exactly two times
+the first total time.

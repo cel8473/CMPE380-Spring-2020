@@ -1,0 +1,114 @@
+Target name is 'target1'
+Target name is 'target2'
+
+The $@ variable prints the name of the file being created
+
+Dependency change for bin1 is 'a.c b.c c.c'
+gcc a.c b.c c.c -o bin1
+make: `bin1' is up to date.
+Dependency change for bin1 is 'b.c c.c'
+gcc a.c b.c c.c -o bin1
+
+The $? variable prints out the files that have changed since the 
+last time that the file was compiled.
+
+gcc -O1 -g -Wall -std=c99 -pedantic   -c -o a.o a.c
+gcc -O1 -g -Wall -std=c99 -pedantic   -c -o b.o b.c
+gcc -O1 -g -Wall -std=c99 -pedantic   -c -o c.o c.c
+Linking 'a.o b.o c.o' to 'bin2'
+The first dependency of 'a.o b.o c.o' is 'a.o'
+gcc a.o b.o c.o -o bin2
+
+The .o files are made and linked to their corresponding .c files
+Then all of them are compiled
+
+
+gcc -O1 -g -Wall -std=c99 -pedantic   -c -o b.o b.c
+Linking 'a.o b.o c.o' to 'bin2'
+The first dependency of 'a.o b.o c.o' is 'a.o'
+gcc a.o b.o c.o -o bin2
+
+b.c and b.o were compiled which is what was expected after changing it
+
+make: `bin2' is up to date.
+No this is not what I expected, the echo didn't print because the syntax
+is wrong, it's supposed to be (%.target: %.source)
+
+
+rm -f *.o bin1 bin2
+Dependency change is 'a'
+gcc a.c -c
+Dependency change is 'b'
+gcc b.c -c
+Dependency change is 'c'
+gcc c.c -c
+Linking 'a.o b.o c.o' to 'bin2'
+The first dependency of 'a.o b.o c.o' is 'a.o'
+gcc a.o b.o c.o -o bin2
+Dependency change is 'b'
+gcc b.c -c
+Linking 'a.o b.o c.o' to 'bin2'
+The first dependency of 'a.o b.o c.o' is 'a.o'
+gcc a.o b.o c.o -o bin2
+
+All of the files were compiled after the clean rule was ran to link all
+the .o files were deleted and they were linked then when we changed
+b.c it was recompiled. $* printed the stem of the .c file. $^ and $<
+printed all of the prerequisites and the first prerequisite.
+
+rm -f *.o bin1 bin2
+Compiling 'a'
+gcc a.c -c
+Compiling 'b'
+gcc b.c -c
+Compiling 'c'
+gcc c.c -c
+Linking 'a.o b.o c.o' to 'bin2'
+The first dependency of 'a.o b.o c.o' is 'a.o'
+gcc a.o b.o c.o -o bin2
+
+Each of the .c files were compiled, this is what I expeccted
+
+Compiling 'a'
+gcc a.c -c
+Compiling 'b'
+gcc b.c -c
+Compiling 'c'
+gcc c.c -c
+Linking 'a.o b.o c.o' to 'bin2'
+The first dependency of 'a.o b.o c.o' is 'a.o'
+gcc a.o b.o c.o -o bin2
+
+All of the files were compiled again, this is what I expected
+because it does not compile the minimum set
+
+-----------------------------------------------------
+rm -f *.o bin1 bin2
+Dependency change for bin1 is 'a.c b.c c.c'
+gcc a.c b.c c.c -o bin1
+make: `bin1' is up to date.
+
+All of the files were compiled, this is what I expected
+
+rm -f *.o bin1 bin2
+Linking 'a.c b.c c.c' to 'bin2'
+The first dependency of 'a.c b.c c.c' is 'a.c'
+gcc a.c b.c c.c -o bin2
+make: `bin2' is up to date.
+
+All of the files were compiled, this is what I expected
+The .o files and .c files were linked
+
+Linking 'a.c b.c c.c' to 'bin2'
+The first dependency of 'a.c b.c c.c' is 'a.c'
+gcc a.c b.c c.c -o bin2
+
+All of the files were compiled, this is what I expected
+
+rm -f *.o bin1 bin2
+Linking 'a.c b.c c.c' to 'bin2'
+The first dependency of 'a.c b.c c.c' is 'a.c'
+gcc a.c b.c c.c -o bin2
+valgrind --tool=memcheck --leak-check=yes --track-origins=yes ./bin2 >> mem.txt 2>&1
+
+All of the files were compiled, this is what I expected

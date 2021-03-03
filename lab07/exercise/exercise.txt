@@ -1,0 +1,65 @@
+The voltage constants in the code are floats, instead 
+of integers. Same with the 2.0 vs 2. Yes it does matter.
+A and B represent the new interval that enclose the root.
+The motor function has three roots.
+
+I guessed 0-50,(-100)-(-50), and 50-100. 
+The roots were 35.687256, -50.823975, 52.63015
+
+The derivative of the function is
+	0.06x^2-1.5x-52.2=f'(x)
+You need it because the newton method uses the slope
+to find the next guess.
+The newton method finds 35.685610. Very close
+For the 30 guess, it finds the same root as before
+
+The number of iterations of bisections is higher than
+the iterations for newton.
+ 
+iter:0	x0:30.000000	x1:34.814815	err:4.814815
+iter:1	x0:34.814815	x1:35.653164	err:0.838349
+iter:2	x0:35.653164	x1:35.685560	err:0.032396
+Newton returned root: 35.685610
+
+
+iter:0	a:0.000000	b:50.000000	x:25.000000	err:25.000000
+iter:1	a:25.000000	b:50.000000	x:37.500000	err:12.500000
+iter:2	a:25.000000	b:37.500000	x:31.250000	err:6.250000
+iter:3	a:31.250000	b:37.500000	x:34.375000	err:3.125000
+iter:4	a:34.375000	b:37.500000	x:35.937500	err:1.562500
+iter:5	a:34.375000	b:35.937500	x:35.156250	err:0.781250
+iter:6	a:35.156250	b:35.937500	x:35.546875	err:0.390625
+iter:7	a:35.546875	b:35.937500	x:35.742188	err:0.195312
+iter:8	a:35.546875	b:35.742188	x:35.644531	err:0.097656
+iter:9	a:35.644531	b:35.742188	x:35.693359	err:0.048828
+iter:10	a:35.644531	b:35.693359	x:35.668945	err:0.024414
+iter:11	a:35.668945	b:35.693359	x:35.681152	err:0.012207
+Bisection returned root: 35.687256
+
+iter:0	a:100.000000	b:50.000000	x:75.000000	err:25.000000
+iter:1	a:75.000000	b:50.000000	x:62.500000	err:12.500000
+iter:2	a:62.500000	b:50.000000	x:56.250000	err:6.250000
+iter:3	a:56.250000	b:50.000000	x:53.125000	err:3.125000
+iter:4	a:53.125000	b:50.000000	x:51.562500	err:1.562500
+iter:5	a:53.125000	b:51.562500	x:52.343750	err:0.781250
+iter:6	a:53.125000	b:52.343750	x:52.734375	err:0.390625
+iter:7	a:52.734375	b:52.343750	x:52.539062	err:0.195312
+iter:8	a:52.734375	b:52.539062	x:52.636719	err:0.097656
+iter:9	a:52.636719	b:52.539062	x:52.587891	err:0.048828
+iter:10	a:52.636719	b:52.587891	x:52.612305	err:0.024414
+iter:11	a:52.636719	b:52.612305	x:52.624512	err:0.012207
+Bisection returned root: 52.630615
+
+iter:0	a:-100.000000	b:-50.000000	x:-75.000000	err:25.000000
+iter:1	a:-75.000000	b:-50.000000	x:-62.500000	err:12.500000
+iter:2	a:-62.500000	b:-50.000000	x:-56.250000	err:6.250000
+iter:3	a:-56.250000	b:-50.000000	x:-53.125000	err:3.125000
+iter:4	a:-53.125000	b:-50.000000	x:-51.562500	err:1.562500
+iter:5	a:-51.562500	b:-50.000000	x:-50.781250	err:0.781250
+iter:6	a:-51.562500	b:-50.781250	x:-51.171875	err:0.390625
+iter:7	a:-51.171875	b:-50.781250	x:-50.976562	err:0.195312
+iter:8	a:-50.976562	b:-50.781250	x:-50.878906	err:0.097656
+iter:9	a:-50.878906	b:-50.781250	x:-50.830078	err:0.048828
+iter:10	a:-50.830078	b:-50.781250	x:-50.805664	err:0.024414
+iter:11	a:-50.830078	b:-50.805664	x:-50.817871	err:0.012207
+Bisection returned root: -50.823975

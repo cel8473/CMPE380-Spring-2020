@@ -1,0 +1,60 @@
+Prelab
+
+1) The minimum req't for root finding using bisection are
+	Two guesses that bracket the root in the first 
+		decision block
+	The repeated roots cannot have even multiplicity
+	A non-zero tolerance because the value of the
+		root is almost never exactly zero
+
+2)You know you found a root when you evaluate the function
+sign at midpoint is equal to zero or is less than the
+tolerance before the max number of iterations is met.
+
+3)The root is almost never zero but there is a very small
+chance that it could be.
+
+4)The basic bisection algorithm is to take two values
+a and b where f(a) and f(b) have opposite signs, and
+the root is between a and b. If neither is zero then 
+you take the midpoint and half the interval depending
+on if f(a) and f(c) have opposite signs, or f(b) and
+f(c). The new value of a or b is the value of c 
+according to which has the opposite sign. If f(a)
+has the opposite sign of f(c) then b=c and vice versa.
+It ends one f(c) is less than the tolerance which means
+it is close enough to zero or the max iterations are met.
+
+5)The new value of a or b is the value of c 
+according to which has the opposite sign. If f(a)
+has the opposite sign of f(c) then b=c and vice versa.
+
+6)The basic idea of the Newton and Secant algorithm
+is to take the slope of the initial guess and follow
+that until you reach close enough to zero and return
+that root.
+
+7)It needs an "escape hatch" to prevent infinite loops.
+
+8)The secant method uses a second "guess" that is near
+the first guess that is used to calculate the slope.
+
+9)The newton update equation is 
+	x(n+1) = xn - f(xn)/f'(xn)
+  The secant update equation is
+	x(n+1) = xn - f(xn)*(xn-x(n-1))/(f(xn)-f(x(n-1)))
+
+10)The difference is that the Secant 2nd guess is just 
+the first guess +0.001 of the first guess to calculate
+the slope.
+
+11)It doesnt require a second guess because it uses the
+derivative at the current point to refine the current 
+root estimate.
+
+12)The use of fabs() is necessary because we are using
+floats or doubles instead of integers.
+
+13)We use the tolerance to check to see if the number
+is close enough to zero as there is a slim chance that
+the number is actually zero.

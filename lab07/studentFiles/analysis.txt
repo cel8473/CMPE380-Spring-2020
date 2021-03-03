@@ -1,0 +1,197 @@
+Timing the code:
+*******************************************************************
+/*The REPEATS macro was set to 1 million in hw7.c for these tests
+*******************************************************************
+
+-O1 optimzation for bisection
+Testing bisection function of hw7
+Timer = 6.2
+Timer divided by R = 6.2e-06
+Testing bisection function of hw7
+Timer = 6.21
+Timer divided by R = 6.21e-06
+Testing bisection function of hw7
+Timer = 6.19
+Timer divided by R = 6.19e-06
+Testing bisection function of hw7
+Timer = 6.16
+Timer divided by R = 6.16e-06
+Testing bisection function of hw7
+Timer = 6.19
+Timer divided by R = 6.19e-06
+
+-O1 optimization for secant
+Testing secant function of hw7
+Timer = 10.77
+Timer divided by R = 1.077e-05
+Testing secant function of hw7
+Timer = 10.46
+Timer divided by R = 1.046e-05
+Testing secant function of hw7
+Timer = 10.44
+Timer divided by R = 1.044e-05
+Testing secant function of hw7
+Timer = 10.67
+Timer divided by R = 1.067e-05
+Testing secant function of hw7
+Timer = 10.39
+Timer divided by R = 1.039e-05
+
+-O1 optimization for newton
+Testing newton function of hw7
+Timer = 20.08
+Timer divided by R = 2.008e-05
+Testing newton function of hw7
+Timer = 20.15
+Timer divided by R = 2.015e-05
+Testing newton function of hw7
+Timer = 19.99
+Timer divided by R = 1.999e-05
+Testing newton function of hw7
+Timer = 20.22
+Timer divided by R = 2.022e-05
+Testing newton function of hw7
+Timer = 20.1
+Timer divided by R = 2.01e-05
+
+-O2 optimization for bisection
+Testing bisection function of hw7
+Timer = 6.21
+Timer divided by R = 6.21e-06
+Testing bisection function of hw7
+Timer = 7.27
+Timer divided by R = 7.27e-06
+Testing bisection function of hw7
+Timer = 6.19
+Timer divided by R = 6.19e-06
+Testing bisection function of hw7
+Timer = 6.25
+Timer divided by R = 6.25e-06
+Testing bisection function of hw7
+Timer = 6.37
+Timer divided by R = 6.37e-06
+
+-O2 optimization for secant
+Testing secant function of hw7
+Timer = 10.39
+Timer divided by R = 1.039e-05
+Testing secant function of hw7
+Timer = 10.35
+Timer divided by R = 1.035e-05
+Testing secant function of hw7
+Timer = 10.47
+Timer divided by R = 1.047e-05
+Testing secant function of hw7
+Timer = 10.38
+Timer divided by R = 1.038e-05
+Testing secant function of hw7
+Timer = 10.47
+Timer divided by R = 1.047e-05
+
+-O2 optimization for newton
+Testing newton function of hw7
+Timer = 20.74
+Timer divided by R = 2.074e-05
+Testing newton function of hw7
+Timer = 20.15
+Timer divided by R = 2.015e-05
+Testing newton function of hw7
+Timer = 22.78
+Timer divided by R = 2.278e-05
+Testing newton function of hw7
+Timer = 20.2
+Timer divided by R = 2.02e-05
+Testing newton function of hw7
+Timer = 20.02
+Timer divided by R = 2.002e-05
+
+-O3 optimization for bisection
+Testing bisection function of hw7
+Timer = 6.19
+Timer divided by R = 6.19e-06
+Testing bisection function of hw7
+Timer = 6.22
+Timer divided by R = 6.22e-06
+Testing bisection function of hw7
+Timer = 6.3
+Timer divided by R = 6.3e-06
+Testing bisection function of hw7
+Timer = 6.2
+Timer divided by R = 6.2e-06
+Testing bisection function of hw7
+Timer = 6.22
+Timer divided by R = 6.22e-06
+
+-O3 optimization for secant
+Testing secant function of hw7
+Timer = 10.38
+Timer divided by R = 1.038e-05
+Testing secant function of hw7
+Timer = 10.4
+Timer divided by R = 1.04e-05
+Testing secant function of hw7
+Timer = 10.39
+Timer divided by R = 1.039e-05
+Testing secant function of hw7
+Timer = 10.4
+Timer divided by R = 1.04e-05
+Testing secant function of hw7
+Timer = 10.37
+Timer divided by R = 1.037e-05
+
+-O3 optimization for newton
+Testing newton function of hw7
+Timer = 21.37
+Timer divided by R = 2.137e-05
+Testing newton function of hw7
+Timer = 20.09
+Timer divided by R = 2.009e-05
+Testing newton function of hw7
+Timer = 20.45
+Timer divided by R = 2.045e-05
+Testing newton function of hw7
+Timer = 20.06
+Timer divided by R = 2.006e-05
+Testing newton function of hw7
+Timer = 20.39
+Timer divided by R = 2.039e-05
+
+Average Times:
+-O1 Optimization
+Bisection: 6.19
+Secant: 10.546
+Newton: 20.1
+
+-O2 Optimization
+Bisection: 6.458
+Secant: 10.412
+Newton: 20.778
+
+-O3 Optimization
+Bisection: 6.226
+Secant: 10.388
+Newton: 20.472
+
+The compiler optimization changes did not do very much.
+The only optimization that consistently improved through
+each of them was the secant method. All of the algorithms
+found a valid root, but they did not find the same root. 
+This is because there were a three different roots between
+[-5,6] so depending on which way the slope was facing, or
+the next guess what, or what the guesses surrounded, the
+methods could have found a different root.
+
+This lab was a review of root finding using the bisection,
+newton and secant methods. The prelab was reading over the 
+different methods that we ended up using in the lab.
+The interactive exercise had us test various root find 
+algorithms to see which had less iterations and why it's
+important to keep numbers as floats and integers in our code.
+
+The lab itself had us implement a C module with the three algorithms
+and test them for efficiency and robustness, and implement
+getopt_long_only() to "drive" the program. A program was made to
+implement the different opt commands and parse command line parameters,
+check for syntax errors and output the results in tabular form.
+We made a make file to compile, link, run appopriate tests, check 
+for memory leaks and clean up. 
