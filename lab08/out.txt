@@ -1,0 +1,128 @@
+**********************************************************
+This is the regular hw8c
+move fopen to top disabled 
+Timer = 26.43
+Timer divided by R = 0.0881
+Timer = 0.1
+Timer divided by R = 3.33333e-05
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+**********************************************************
+This is the regular hw8c
+move fopen to top disabled 
+Timer = 5.21
+Timer divided by R = 0.0173667
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+**********************************************************
+This is the regular hw8c
+move fopen to top disabled 
+Timer = 4.91
+Timer divided by R = 0.0163667
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+**********************************************************
+This is the regular hw8c
+move fopen to top disabled 
+Timer = 5.01
+Timer divided by R = 0.0167
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+************************************************************
+This is the hw8c_opt1
+move fopen to top disabled 
+Timer = 0.71
+Timer divided by R = 0.00236667
+Timer = 0.1
+Timer divided by R = 3.33333e-05
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+************************************************************
+This is the hw8c_opt1
+move fopen to top disabled 
+Timer = 0.68
+Timer divided by R = 0.00226667
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+************************************************************
+This is the hw8c_opt1
+move fopen to top disabled 
+Timer = 0.67
+Timer divided by R = 0.00223333
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+************************************************************
+This is the hw8c_opt1
+move fopen to top disabled 
+Timer = 0.67
+Timer divided by R = 0.00223333
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+*********************************************************
+This is the hw8c_opt2
+move fopen to top disabled 
+Timer = 26.34
+Timer divided by R = 0.0878
+Timer = 0.09
+Timer divided by R = 3e-05
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+*********************************************************
+This is the hw8c_opt2
+move fopen to top disabled 
+Timer = 5.38
+Timer divided by R = 0.0179333
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+*********************************************************
+This is the hw8c_opt2
+move fopen to top disabled 
+Timer = 4.9
+Timer divided by R = 0.0163333
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+*********************************************************
+This is the hw8c_opt2
+move fopen to top disabled 
+Timer = 5.24
+Timer divided by R = 0.0174667
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+**********************************************************
+This is the hw8c_opt3
+move fopen to top disabled 
+Timer = 24.56
+Timer divided by R = 0.0818667
+Timer = 0.08
+Timer divided by R = 2.66667e-05
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+**********************************************************
+This is the hw8c_opt3
+move fopen to top disabled 
+Timer = 5.28
+Timer divided by R = 0.0176
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+**********************************************************
+This is the hw8c_opt3
+move fopen to top disabled 
+Timer = 4.87
+Timer divided by R = 0.0162333
+Timer = 0.02
+Timer divided by R = 6.66667e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035
+**********************************************************
+This is the hw8c_opt3
+move fopen to top disabled 
+Timer = 5
+Timer divided by R = 0.0166667
+Timer = 0.01
+Timer divided by R = 3.33333e-06
+1500000 data lines processed, the least square line is : Y = 1.26393 * X + 0.823035

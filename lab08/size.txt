@@ -1,0 +1,47 @@
+   text	   data	    bss	    dec	    hex	filename
+   4864	    620	     16	   5500	   157c	hw8c_0
+
+   text	   data	    bss	    dec	    hex	filename
+   3551	    612	     16	   4179	   1053	hw8c
+
+   text	   data	    bss	    dec	    hex	filename
+   3599	    612	     16	   4227	   1083	hw8c_2
+
+   text	   data	    bss	    dec	    hex	filename
+   3983	    612	     16	   4611	   1203	hw8c_3
+
+   text	   data	    bss	    dec	    hex	filename
+   4794	    628	     16	   5438	   153e	hw8c_opt1_0
+
+   text	   data	    bss	    dec	    hex	filename
+   3489	    620	     16	   4125	   101d	hw8c_opt1
+
+   text	   data	    bss	    dec	    hex	filename
+   3489	    620	     16	   4125	   101d	hw8c_opt1_2
+
+   text	   data	    bss	    dec	    hex	filename
+   3777	    620	     16	   4413	   113d	hw8c_opt1_3
+
+   text	   data	    bss	    dec	    hex	filename
+   5104	    620	     16	   5740	   166c	hw8c_opt2_0
+
+   text	   data	    bss	    dec	    hex	filename
+   3599	    612	     16	   4227	   1083	hw8c_opt2
+
+   text	   data	    bss	    dec	    hex	filename
+   3663	    612	     16	   4291	   10c3	hw8c_opt2_2
+
+   text	   data	    bss	    dec	    hex	filename
+   4111	    612	     16	   4739	   1283	hw8c_opt2_3
+
+   text	   data	    bss	    dec	    hex	filename
+   5248	    620	     16	   5884	   16fc	hw8c_opt3_0
+
+   text	   data	    bss	    dec	    hex	filename
+   3663	    612	     16	   4291	   10c3	hw8c_opt3
+
+   text	   data	    bss	    dec	    hex	filename
+   3711	    612	     16	   4339	   10f3	hw8c_opt3_2
+
+   text	   data	    bss	    dec	    hex	filename
+   3935	    612	     16	   4563	   11d3	hw8c_opt3_3

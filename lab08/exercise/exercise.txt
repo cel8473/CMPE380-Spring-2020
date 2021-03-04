@@ -1,0 +1,78 @@
+Lab_a.c is the faster implementation. The percentage of
+faster is 180% for implementation A over C. Yes the value
+returned from the time command line feature is very close
+to the macro value.
+
+lab_a
+Timer = 5.72
+Timer divided by R = 0.00572
+real	0m5.731s
+user	0m5.714s
+sys	0m0.013s
+
+lab_c
+Timer = 10.49
+Timer divided by R = 0.01049
+
+real	0m10.511s
+user	0m5.379s
+sys	0m5.124s
+
+lab_a2
+==6139== Memcheck, a memory error detector
+==6139== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6139== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==6139== Command: ./lab_a2
+==6139== 
+Timer = 0.34
+Timer divided by R = 0.17
+==6139== 
+==6139== HEAP SUMMARY:
+==6139==     in use at exit: 0 bytes in 0 blocks
+==6139==   total heap usage: 4 allocs, 4 frees, 16,160,000 bytes allocated
+==6139== 
+==6139== All heap blocks were freed -- no leaks are possible
+==6139== 
+==6139== For counts of detected and suppressed errors, rerun with: -v
+==6139== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+lab_c2
+
+==6205== Memcheck, a memory error detector
+==6205== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6205== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==6205== Command: ./lab_c2
+==6205== 
+Timer = 0.4
+Timer divided by R = 0.2
+==6205== 
+==6205== HEAP SUMMARY:
+==6205==     in use at exit: 0 bytes in 0 blocks
+==6205==   total heap usage: 20,002 allocs, 20,002 frees, 16,160,000 bytes allocated
+==6205== 
+==6205== All heap blocks were freed -- no leaks are possible
+==6205== 
+==6205== For counts of detected and suppressed errors, rerun with: -v
+==6205== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+SIZES
+   text	   data	    bss	    dec	    hex	filename
+   2515	    580	     16	   3111	    c27	./lab_a
+
+   text	   data	    bss	    dec	    hex	filename
+   2450	    572	     16	   3038	    bde	./lab_c
+No they are about the same size
+
+lab_a3
+The 3x3 2D dynamic matrix
+ 0.0	 0.1	 0.2	
+ 1.0	 1.1	 1.2	
+ 2.0	 2.1	 2.2	
+
+lab_c3
+
+The 3x3 2D dynamic matrix
+ 0.0	 0.1	 0.2	
+ 1.0	 1.1	 1.2	
+ 2.0	 2.1	 2.2	
+Yes the outputs are the same. Yes they ran

@@ -1,0 +1,56 @@
+			hw8c_0		hw8c		hw8c_2		hw8c_3
+Data Times per iter	0.0881		0.01736		0.01636		0.0167
+Calc Times per iter	3.33*E-05	6.66*E-06	6.66*E-06	6.66*E-06
+ls -la			16824		20824		21360		24064
+text(code) size		4864		3551		3599		3983
+data size		620		612		612		612
+
+
+			hw8c_opt1_0	hw8c_opt1	hw8c_opt1_2	hw8c_opt1_3
+Data Times per iter	0.00236		0.00226		0.00223		0.00223
+Calc Times per iter	3.33*E-05	6.66*E-06	6.66*E-06	6.66*E-06
+ls -la			16784		20496		21008		23104
+text(code) size		4794		3489		3489		3777
+data size		628		620		620		620
+
+
+			hw8c_opt2_0	hw8c_opt2	hw8c_opt2_2	hw8c_opt2_3
+Data Times per iter	0.0878		0.01793		0.01633		0.01746
+Calc Times per iter	3*E-05		6.66*E-06	6.66*E-06	6.66*E-06
+ls -la			16872		20920		21496		24216
+text(code) size		5104		3599		3663		4111
+data size		620		612		612		612
+
+
+			hw8c_opt3_0	hw8c_opt3	hw8c_opt3_2	hw8c_opt3_3
+Data Times per iter	0.08186		0.0176		0.01623		0.01666
+Calc Times per iter	2.66*E-05	6.66*E-06	6.66*E-06	3.33*E-06
+ls -la			16944		21288		21872		22496
+text(code) size		5248		3663		3711		3935
+data size		620		612		612		612
+
+The first optimization compared to no optimization makes the
+biggest difference. The second and third optimization makes 
+little time decrease or sometimes the max optimization increases
+the time. The ls -la/binary size increases as the optimizations get higher,
+but the text size usually decreases with the first optimization and 
+then the second and third optimization it increases. The data size 
+decreases or stays the same as the optimization level increases.
+Hw8c_opt3.c was about 5-10% faster than Hw8c_opt2, the extra
+temporary variables helped slightly but the size was larger.
+A higher level of optimization does NOT always help.
+
+The lab was focused on 2d array performance improvements and 
+more on program measurements. Prelab just looked at two different ways of
+implementing a 2d array and how each differed. The interactive exercise
+was comparing the timings off the two different implementations and how
+they differed in size. The assignment was measuring performance and 
+analyzing the impact of optimization techniques, like different opt 
+levels and unrolling loops and reallocing instead of malloc/copy/free.
+These are important to understand when working with smaller computers
+that may need memory optimization and others that allow for speed 
+optimization for the consumer.
+
+The hard part of the lab was just copying and pasting all of the 
+different opt levels and changes that we did to the files.
+Other than that it was probably one of the easiest labs yet.
